@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-
+// The nestedFunction is able to access internal because of closure.
 
 
 
@@ -28,8 +28,12 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
+function summation(num) {
   /*Your Code Here*/
+  for(let i = 0; i <= num; i++){
+    num += num 
+  }
+  return num;
 
   }
  
